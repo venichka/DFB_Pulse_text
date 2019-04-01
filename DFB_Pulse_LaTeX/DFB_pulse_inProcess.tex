@@ -83,7 +83,7 @@
 	If the size of the pump beam is larger than the propagation length of electromagnetic waves in the plasmonic structure, the collective mode is localized in the pumped area.
 	In this case, the response time slightly increases with the size of the pump beam.
 	In the opposite case, the mode is not localized inside the pumped area and the response time grows with the narrowing of the beam.
-	We demonstrate that there is a critical minimal size of the pump beam for which the modulation speed is a maximum and can achieve $1$ THz.
+	We demonstrate that there is a critical minimum size of the pump beam for which the modulation speed is a maximum and can achieve $1$ THz.
 	The obtained result opens the way to increasing both the modulation speed and the energy efficiency of plasmonic laser devices. 
 
 \end{abstract}
@@ -128,10 +128,11 @@ Combining numerical simulations of the laser dynamics within the framework devel
 This dependence is due to the complex structure of the modes of the DFB laser.
 The interaction of the laser modes with the pumped active medium causes the emergence of a single collective mode whose properties strongly depend on the pump size.
 If the pump beam is larger than the decay length of the EM field in the plasmonic structure, the collective mode is localized inside the pumped area.
-The response time in this case reaches picoseconds and almost does not change with the size of the pump beam.
+The response time in this case reaches picoseconds and practically does not change with the size of the pump beam.
 In the opposite case, the mode is not localized inside the pumped area and the response time grows with the narrowing of the beam.
-Therefore, there is a critical minimal diameter of the pump beam, $d_{beam}^*$, required for achievement of the short response time. This diameter is about the decay length of the EM field in the plasmonic structure and for the considered plasmonic laser is $\sim 15 \mu$m. When the size of pump beam is greater than $d_{beam}^*$ the response time of the plasmonic laser is $\sim 1$ $\text{ps}$.
-The obtained results confirm that plasmonic DFB lasers can have a modulation frequency exceeding several hundred GHz in the large-signal modulation regime. The optimization of the pump beam size makes it possible to increase the modulation speed as well as the energy efficiency of plasmonic DFB laser devices.
+Consequently, there is a critical minimum diameter of the pump beam, $d_{\text{beam}}^*$, necessary to achieve the shortest response time. This diameter is about the decay length of the EM field in the plasmonic structure and for the plasmonic laser under consideration is $\sim 15 \mu$m. When the size of the pump beam is greater than $d_{\text{beam}}^*$, the response time of the plasmonic laser is $\sim 1$ $\text{ps}$.
+The obtained results confirm that plasmonic DFB lasers can have a modulation frequency exceeding several hundred GHz in the large-signal modulation regime. 
+Optimization of the size of the pump beam allows an increase in the modulation speed, as well as the energy efficiency of plasmonic DFB laser devices.
 
 \begin{figure}[!h]
 	\centering
@@ -162,36 +163,36 @@ This approach is based on the following equations:
 \end{equation}
 Here, $n_{jj}$ is the photon number in the $j$th Bloch mode, $n_{jk}$ is an interference term responsible for the flow of photons from the $k$th to the $j$th mode, when $j \neq k$.
 $D_m$ is the population inversion of the $m$th atom and $\varphi _{jm} = - i \langle \hat{a} _j^{+} \hat{\sigma} _m \rangle$ describes the energy flow between the $m$th atom and $j$th mode.
-The parameters $\omega _j$, $\gamma _j$ correspond to the real and imaginary parts of the Bloch modes of plasmonic structure; $\omega _{\sigma}$ and $\gamma _D$ are the atom transition frequency and the relaxation rate of the population inversion of the atoms, $\gamma _{jm}^{\varphi} = \gamma _{\sigma} + \gamma _j + \gamma _D / 2$, $\gamma _{\sigma}$ is the relaxation rate of the phase of the atom polarization.
+The parameters $\omega _j$, $\gamma _j$ correspond to the real and imaginary parts of the Bloch modes of plasmonic structure; $\omega _{\sigma}$ and $\gamma _D$ are the atom transition frequency and the relaxation rate of the population inversion of the atoms; $\gamma _{jm}^{\varphi} = \gamma _{\sigma} + \gamma _j + \gamma _D / 2$, $\gamma _{\sigma}$ is the relaxation rate of the phase of the atom polarization.
 $\Omega _{jm}$ is the Rabi constant of coupling between the $j$th mode and the $m$th atom which can be expressed as
 \begin{equation}\label{eq4SM}
 {\Omega _{jm}} =  - {{\bf{d}}_m} \cdot {{\bf{E}}_j}({{\bf{r}}_m})/ \hbar,
 \end{equation}
-where ${{\bf{d}}_m}$  is the dipole moment of the $m$th atom at the transition frequency and ${{\bf{E}}_j}({{\bf{r}}_m})$  is the electric field `per one quantum' in the $j$th mode at the position of the $m$th atom. The electric field `per one quantum' is inversely proportional to the mode volume (see Appendix A). As a result, the Rabi constant increases with the decrease of the mode volume. The Eqs.~(\ref{eq1})--(\ref{eq3}) allow for the dependence of the stimulated and spontaneous emissions rates on the Rabi constant that enables to take into account the Purcell effect of the plasmonic structure. Every atom of the active medium has own coordinates which determine the Rabi constants between the atom and the Bloch modes of the plasmonic structure, see Eq.~(\ref{eq4SM}). That makes it possible to take into account the spatial distribution of the pumping and the population inversion within the active medium. 
+where ${{\bf{d}}_m}$  is the dipole moment of the $m$th atom at the transition frequency and ${{\bf{E}}_j}({{\bf{r}}_m})$  is the electric field `per one quantum' in the $j$th mode at the position of the $m$th atom. The electric field `per one quantum' is inversely proportional to the mode volume (see Appendix A). As a result, the Rabi constant increases with the decrease of the mode volume. The Eqs.~(\ref{eq1})--(\ref{eq3}) allow for the dependence of the stimulated and spontaneous emissions rates on the Rabi constant that enables to take into account the Purcell effect of the plasmonic structure. Every atom of the active medium has its coordinates, which determine the Rabi constants between the atom and the Bloch modes of the plasmonic structure, see Eq.~(\ref{eq4SM}). This allows us to take into account the spatial distribution of the pumping and the population inversion within the active medium. 
 
 The Eqs.~(\ref{eq1})--(\ref{eq3}) generalize the rate equations widely used in laser theory \cite{SiegmanLasers}.
 In addition to the dynamics of the photon number in each mode and the population inversion of each atom, they describe energy flows between the active medium and the atoms, and the interference between the EM fields of the different modes, $n_{jk}$ \cite{Zyablovsky2017approach}. 
 
-For a quantitative description of the temporal dynamics of a plasmonic DFB laser under pulse pumping, we consider a laser based on an Au film perforated by a periodic array of nanosized holes and coated the layer of the active medium, see Fig.~\ref{fig1}. We consider that the thickness of the Au film is $100$ $\text{nm}$, whereas the diameter of the holes is $160$ $\text{nm}$ and the distance between holes is $470$ $\text{nm}$. The surface of whole periodic plasmonic structure has size of 190 $\mu$m by 1908 $\mu$m. We consider that the transition frequency of the active medium is close to the frequency of second-order Bragg grating in the plasmonic structure and the linewidth of the active medium is about 100 nm.
+For a quantitative description of the temporal dynamics of a plasmonic DFB laser under pulse pumping, we consider a laser based on an Au film perforated by a periodic array of nanosized holes and coated with the layer of the active medium, see Fig.~\ref{fig1}. We consider that the thickness of the Au film is $100$ $\text{nm}$, the diameter of the holes is $160$ $\text{nm}$, and the distance between holes is $470$ $\text{nm}$. The surface of the entire periodic plasmonic structure is $190 \times 190$ $\mu \text{m}^2$. We consider that the transition frequency of the active medium is close to the frequency of the second-order Bragg grating in the plasmonic structure and the linewidth of the active medium is about 100 nm.
 
-Similar plasmonic DFB laser have been realized in a number of experiments \cite{BeijnumPRL,TennerJOpt,TennerACSPhot} and its parameters have been well studied \cite{BeijnumPRL,TennerJOpt,TennerACSPhot,nefedkin2018acsphot}.
+A similar plasmonic DFB laser have been implemented in a number of experiments \cite{BeijnumPRL,TennerJOpt,TennerACSPhot} and its parameters have been well studied \cite{BeijnumPRL,TennerJOpt,TennerACSPhot,nefedkin2018acsphot}.
 
-In the absence of the holes the eigenmodes of the plasmonic structure are TM-modes similar to surface plasmons at the metal-dielectric interface \cite{TennerJOpt,TennerACSPhot}. 
-These modes have in-plane component of the magnetic field, $H_{\parallel}$, that is perpendicular to the direction of mode's propagation and both out-of-plane, $E_{\perp}$, and in-plane, $E_{\parallel}$, components of the electric field \cite{TennerJOpt,TennerACSPhot}. 
+In the absence of the holes, the eigenmodes of the plasmonic structure are TM-modes, similar to surface plasmons at the metal-dielectric interface \cite{TennerJOpt,TennerACSPhot}. 
+These modes have an in-plane component of the magnetic field, $H_{\parallel}$, which is perpendicular to the direction of mode's propagation and both out-of-plane, $E_{\perp}$, and in-plane, $E_{\parallel}$, components of the electric field \cite{TennerJOpt,TennerACSPhot}. 
 The in-plane electric field, $E_{\parallel}$, is in the direction of the mode's propagation. 
-The out-of-plane component of the electric field, $E_{\perp}$, is much greater than in-plane component, $E_{\parallel}$ \cite{TennerJOpt,TennerACSPhot}.
-The eigenmodes of the plasmonic structure with the holes we find within the coupled-mode theory with the experimental values of the scattering rates (see~\cite{TennerJOpt} and Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}). The respective dispersion curves are shown \textbf{\underline{in Fig.~.}} The modes corresponding to different dispersion curves have various radiation losses and field distributions inside the unit cell of the plasmonic crystal (see Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}). The far-field radiation from the plasmonic structure mainly arises owing to the scattering of $H_{\parallel}$ by the holes~\cite{TennerJOpt}. 
+The out-of-plane component of the electric field, $E_{\perp}$, is much greater than the in-plane component, $E_{\parallel}$ \cite{TennerJOpt,TennerACSPhot}.
+We find the eigenmodes of the plasmonic structure with the holes within the coupled-mode theory with the experimental values of the scattering rates (see~\cite{TennerJOpt} and Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}). Corresponding dispersion curves are shown in \textbf{\underline{in Fig.~.}} The modes corresponding to different dispersion curves have various radiation losses and field distributions inside the unit cell of the plasmonic crystal (see Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}). The far-field radiation from the plasmonic structure arises mainly due to the scattering of $H_{\parallel}$ on the holes~\cite{TennerJOpt}. 
 For this reason, the modes that have a minimum value of $H_{\parallel}$ at the holes have smaller radiation losses than the modes that have a maximum value of $H_{\parallel}$ at the holes.
-In the continuous-wave regime the lasing takes place at the modes with small radiation losses and high quality factor lied in 2nd dispersion curve, \textbf{\underline{see Fig.~}} \cite{TennerJOpt,nefedkin2018acsphot}.
+In the continuous-wave regime, the lasing takes place at the modes with small radiation losses and a high quality factor lying on the 2nd dispersion curve, \textbf{\underline{see Fig.~}} \cite{TennerJOpt,nefedkin2018acsphot}.
 
-In numerical simulation we allow for several hundreds the Bloch modes of the plasmonic structure lied in different dispersion curves. The step of quantization of the Bloch wavevectors is determined by the size of the periodic plasmonic structure \cite{nefedkin2018acsphot} and Suppl.Mat. of \cite{nefedkin2018acsphot}.
+In numerical simulations, we take into account several hundreds of the Bloch modes of the plasmonic structure lying on different dispersion curves. The step of quantization of the Bloch wavevectors is determined by the size of the periodic plasmonic structure \cite{nefedkin2018acsphot} and Suppl.Mat. of \cite{nefedkin2018acsphot}.
 
 We consider the response of the system to ultrashort pulse pumping of the active medium.
-Assuming that the time of the external pump pulse lies in the femtosecond range and is much shorter than all characteristic times of the plasmonic DFB laser, in our model the ultrashort pulse pumping is described as the initial condition for the $D_m$ in Eqs.~(\ref{eq1})--(\ref{eq3}). We consider that in an initial moment the population inversions of the atoms whose coordinate lie inside the pump beam are expressed as
+Assuming that the time of the external pump pulse lies in the femtosecond range and is much shorter than all characteristic times of the plasmonic DFB laser, in our model the ultrashort pulse pumping is described as the initial condition for the $D_m$ in Eqs.~(\ref{eq1})--(\ref{eq3}). We consider that at an initial time the population inversions of the atoms whose coordinates lie inside the pump beam are expressed as
 \begin{equation}\label{eq5SM}
 {\left(D_m+1\right)/2} = {P_0 \Delta t / \left(n_c S h \hbar \omega \right)}. 
 \end{equation}
-Here $\left(D_m+1\right)/2$ is a population of the upper level of the atom; $P_0$ is a pump power; $\Delta t$ is a duration of the pump pulse; $n_c$ is a concentration of the active atoms; $S$ is an area of the pump beam; $h$ is the thickness of Au film; $\omega$ is a frequency of the pump pulse. Also, we consider that the population inversions of the atoms whose coordinate lie outside the pump beam are $-1$ in the initial moment.
+Here $\left(D_m+1\right)/2$ is a population of the upper level of the atom; $P_0$ is a pump power; $\Delta t$ is a duration of the pump pulse; $n_c$ is a concentration of the active atoms; $S$ is an area of the pump beam; $h$ is the thickness of Au film; $\omega$ is a frequency of the pump pulse. Also, we consider that the population inversions of the atoms whose coordinates lie outside the pump beam are $-1$ at the initial time.
 
 Using Eqs.~(\ref{eq1})--(\ref{eq3}), we simulate the time response to an ultrashort pump pulse for different diameters of the pump beam.
 In Fig.~\ref{fig2}a the dependence of the photon number on time is shown.
@@ -246,7 +247,7 @@ This time is about one picosecond.
 		\includegraphics[width=\linewidth]{Fig3f.png}
 %		\caption{}
 	\end{subfigure}
-	\caption{Distribution of the EM field intensity on the surface of plasmonic DFB laser when diameter of the pump beam $d_{\text{beam}}<d_{\text{beam}}^*$ (a)-(c) in time moment 0.5 ps (a); 1.75 ps (b); 2.5 ps (c). Distribution of the EM field intensity on the surface of plasmonic DFB laser when diameter of the pump beam $d_{\text{beam}}>d_{\text{beam}}^*$ (d)-(f) in time moment 0.32 ps (d); 0.541 ps (e); 1.5 ps (f). These time moments correspond to circles on the red curve and the black curve in Fig.\ref{fig2}a, respectively. The dashed circles in Figs. 3 denote the boundaries of the pump beam.}
+	\caption{Distribution of the EM field intensity on the surface of the plasmonic DFB laser when the diameter of the pump beam $d_{\text{beam}}<d_{\text{beam}}^*$ (a)-(c) in time moment 0.5 ps (a); 1.75 ps (b); 2.5 ps (c). Distribution of the EM field intensity on the surface of the plasmonic DFB laser when the diameter of the pump beam $d_{\text{beam}}>d_{\text{beam}}^*$ (d)-(f) in time moment 0.32 ps (d); 0.541 ps (e); 1.5 ps (f). These time moments correspond to circles on the red curve and the black curve in Fig.\ref{fig2}a, respectively. The dashed circles denote the boundaries of the pump beam.}
 	\label{fig3}	
 \end{figure}
 
@@ -262,11 +263,11 @@ Thus, there is an optimal diameter of the pump beam, $d_{\text{beam}}^*$, at whi
 \section*{Single-mode approximation}
 
 The existence of an optimal size of the pump beam can be explained with the example of a single-mode model. To justify the single-mode approximation, we calculate the distribution of the electric field intensity over the area of the plasmonic DFB laser at different moments of time, see Fig.~\ref{fig3}.
-Although, in our simulation we take into account the several hundreds of the Bloch modes of the plasmonic structure which jointly form the EM field distribution in the active medium we can see that the EM field distribution practically does not change in the first and second stage of the system response. Another words, there is dynamical balance between the relaxation processed in the plasmonic structure, the propagation of the EM field and the stimulated amplification of the EM field in the active medium. When the diameter of the pump beam is larger than the critical value, $d_{\text{beam}} > d_{\text{beam}}^*$, the electric field is located inside the pumped region of the active medium, see Figs.~\ref{fig3}(d)--(f).
-Whereas when $d_{\text{beam}} < d_{\text{beam}}^*$, the main part of the electric field is outside the pumped area, see Figs.~\ref{fig3}(a)--(c).
+Although in our simulations we take into account several hundreds of the Bloch modes of the plasmonic structure, which together form the EM field distribution in the active medium, we can see that the EM field distribution practically does not change in the first and second stages of the system response. In other words, there is a dynamical balance between relaxation processes in the plasmonic structure, the propagation of the EM field and the stimulated amplification of the EM field in the active medium. When the diameter of the pump beam is larger than the critical value, $d_{\text{beam}} > d_{\text{beam}}^*$, the electric field is located inside the pumped region of the active medium, see Figs.~\ref{fig3}(d)--(f).
+In the opposite case, when $d_{\text{beam}} < d_{\text{beam}}^*$, the main part of the electric field is outside the pumped area, see Figs.~\ref{fig3}(a)--(c).
 However, in both cases, the spatial distribution of the electric field intensity remains almost unchanged during its temporal evolution. 
 
-We use the fact of the constancy of the EM field distribution for construction of the single-mode model. For this purpose, we consider that there is single collective mode whose the EM field distribution coincide with the EM field distribution found in the numerical simulation multi-mode problem. Furthermore, we assume that the pumped active medium interacts only with such a single collective mode. Within of these approximations, the system dynamics can be approximately described by the following system of equations \cite{SiegmanLasers}:
+We use the fact of the constancy of the EM field distribution to construct a single-mode model. To do this, we assume that there is a single collective mode, the EM field distribution of which coincides with the EM field distribution found in the numerical simulations of the multi-mode problem. Furthermore, we assume that the pumped active medium interacts only with such a single collective mode. Within these approximations, the system dynamics can be approximately described by the following system of equations \cite{SiegmanLasers}:
 \begin{gather} 
 \dot n =  - 2{\gamma _a}n + 2{N_{\text{at}}}{\Omega _R}\varphi \label{ZE1}
 \\
@@ -392,12 +393,12 @@ If the size of the pump beam exceeds the propagation length of the EM waves, thi
 The response time then grows logarithmically with increasing pump beam diameter.
 In contrast, when the mode is outside the pumped region, the response time is approximately inversely proportional to the square of the pump beam diameter, and so increases rapidly as this diameter decreases from its critical value.
 
-Thus, there is a critical minimal diameter of the pump beam, $d_{beam}^*$, required for achievement of the short response time. This diameter is about the decay length of the EM field in the plasmonic structure and for the considered plasmonic laser is $\sim 15 \mu$m. The existence of the critical pump beam size gives the opportunity to reduce the energy consumption because further increase of the pump beam size does not shorten the response time.
+Thus, there is a critical minimum diameter of the pump beam, $d_{\text{beam}}^*$, necessary to achieve the shortest response time. This diameter is about the decay length of the EM field in the plasmonic structure and for the considered plasmonic laser is $\sim 15 \mu$m. The existence of the critical pump beam size gives the opportunity to reduce the energy consumption because further increase of the pump beam size does not shorten the response time.
 In turn, if the area of the pump beam is small, there is the opportunity to reduce the size of the device.
 Thus, the obtained results pave the way to creating ultrafast optoelectronic devices based on plasmonic lasers with low power consumption which have the potential of on-chip integration.
 
-It is interesting that the delay time, Eq.~(\ref{tdel}), resembles the dependence of the delay time of a superradiant burst \cite{gross1982superradiance, andreev1980collective,nefedkin2017badcavitySR}.
-Indeed, it is well known \cite{gross1982superradiance, andreev1980collective} that a system consisting of initially inverted atoms placed in a low-Q cavity, i.e., when $\gamma_a \gg \gamma_D$, exhibits a superradiant burst with the delay time, Eq.~(\ref{tdel}). In the plasmonic cavity the inequality $\gamma_a \gg \gamma_D$ always is hold true and, for this reason, the superradiance problem and the problem that we investigate here have the same physical grounds. We believe that further study of connection between these problems is interesting.
+It is interesting to note that the delay time, Eq.~(\ref{tdel}), resembles the dependence of the delay time of a superradiant burst \cite{gross1982superradiance, andreev1980collective,nefedkin2017badcavitySR}.
+Indeed, it is well known \cite{gross1982superradiance, andreev1980collective} that a system consisting of initially inverted atoms placed in a low-Q cavity, i.e., when $\gamma_a \gg \gamma_D$, exhibits a superradiant burst with the delay time, Eq.~(\ref{tdel}). In the plasmonic cavity, the inequality $\gamma_a \gg \gamma_D$ is always hold true and, for this reason, the superradiance problem and the problem that we investigate here have the same physical grounds. We believe that further study of the relationship between these problems may be important in the context of creating ultrafast optoelectronic devices.
 
 
 
@@ -450,17 +451,17 @@ where $\Omega _{0jm}$ can be expressed as
 {\Omega _{0jm}} =-\sqrt{\frac{{8\pi \omega _j \left|\textbf{d}_m\right|^2 \left|\textbf{e}_{j}\right|_{max}^2}}{{N \hbar} \int\limits_{{V_{cell}}} {\left( {{{\left. {\frac{{\partial {\mathop{\rm Re}\nolimits} \left( {\varepsilon(\omega, \textbf{r}) \omega } \right)}}{{\partial \omega }}} \right|}_{\omega  = {\omega _i}}}{{\left| {{{\bf{e}}_j}\left( {\bf{r}} \right)} \right|}^2} + {{\left| {{{\bf{h}}_j}\left( {\bf{r}} \right)} \right|}^2}} \right){d^3}{\bf{r}}}}} = -\sqrt{\frac{{8\pi \omega _j \left|\textbf{d}_m\right|^2}}{\hbar V_{j mode}}} \tag{A.9}
 \end{equation}
 where $\left|\textbf{e}_{j}\right|_{max}$ is a maximum value of the periodic function $\left|\textbf{e}_{j}(\textbf{r})\right|$; $V_{j mode}=\frac{\int\limits_{{V_{cell}}} {\left( {{{\left. {\frac{{\partial {\mathop{\rm Re}\nolimits} \left( {\varepsilon(\omega, \textbf{r}) \omega } \right)}}{{\partial \omega }}} \right|}_{\omega  = {\omega _i}}}{{\left| {{{\bf{e}}_j}\left( {\bf{r}} \right)} \right|}^2} + {{\left| {{{\bf{h}}_j}\left( {\bf{r}} \right)} \right|}^2}} \right){d^3}{\bf{r}}}}{\left|\textbf{e}_{j}\right|_{max}^2}$ is mode volume of \textit{j}th mode.
-Also, ${f_j}\left( {{{\bf{r}}_m}} \right) = \left( {{{\bf{d}}_m} \cdot {{\bf{e}}_j}\left( {{{\bf{r}}_m}} \right)} \right)/(\left|\bf{d}_m\right| \left|\textbf{e}_{j}\right|_{max})$ is a periodic function with plasmonic lattice cell period. Note that the functions ${f_j}\left( {{{\bf{r}}_m}} \right)$ for the modes lied in different bands are orthogonal to each other. The orthogonality arises due to difference of the EM field distributions within the cell of the plasmonic structure for the modes lied in different bands.
+Also, ${f_j}\left( {{{\bf{r}}_m}} \right) = \left( {{{\bf{d}}_m} \cdot {{\bf{e}}_j}\left( {{{\bf{r}}_m}} \right)} \right)/(\left|\bf{d}_m\right| \left|\textbf{e}_{j}\right|_{max})$ is a periodic function with plasmonic lattice cell period. Note that the functions ${f_j}\left( {{{\bf{r}}_m}} \right)$ for the modes lying in different bands are orthogonal to each other. The orthogonality arises due to difference of the EM field distributions within the cell of the plasmonic structure for the modes lying in different bands.
 
 
 
 \section*{Appendix B}
 The eigenimodes of such a plasmonic structure without holes are the TM-modes that are similar to surface plasmons at the metal-dielectric interface.
-These modes have in-plane component of the magnetic field, $H_{\parallel}$, that is perpendicular to the direction of the mode propagation, and out-of-plane, $E_{\perp}$, and in-plane, $E_{\parallel}$, components of the electric field.
+These modes have an in-plane component of the magnetic field, $H_{\parallel}$, that is perpendicular to the direction of the mode propagation, and out-of-plane, $E_{\perp}$, and in-plane, $E_{\parallel}$, components of the electric field.
 The in-plane electric field, $E_{\parallel}$, is in the direction of the mode propagation.
 For the surface plasmons the out-of-plane component of the electric field, $E_{\perp}$, is much greater than the in-plane component, $E_{\parallel}$.
 
-In a periodical lattice, the electric and magnetic fields of the eigenmodes satisfy the Bloch condition. 
+In a periodic lattice, the electric and magnetic fields of the eigenmodes satisfy the Bloch condition. 
 We consider that the transition frequency of the active medium is close to the frequency at which the second Bloch condition is satisfied, i.e. $k_{sp}(\omega_{\sigma}) \approx G$, where $k_{sp}$ is a wavevector of the TM-mode of the plasmonic structure without holes and $G$ is a reciprocal lattice vector. 
 The eigenmodes of the 2D plasmonic DFB laser can be calculated by the coupled-mode theory~\cite{ExterOptExp,TennerJOpt}. 
 Within this framework the electric field is expressed as
@@ -472,10 +473,10 @@ Within this framework the electric field is expressed as
 \end{array}
 \end{equation}
 %\end{widetext}
-Here, we suppose that the surface of the Au film lies perpendicularly to z axis and the sides of the plasmonic lattice are in the direction of x and y axes. 
+Here, we suppose that the surface of the Au film lies perpendicularly to $z$ axis and the sides of the plasmonic lattice are in the direction of $x$ and $y$ axes. 
 The centre of the unit cell coincides with the centre of a hole.
 The vectors ${{\bf{u}}_x}$,  ${{\bf{u}}_{ - x}}$, ${{\bf{u}}_y}$, and ${{\bf{u}}_{ - y}}$  are the eigenvectors of propagating TM-modes of the plasmonic system without holes with respectively directed wavevectors.
-${E_x}$ , ${E_{ - x}}$,  ${E_y}$, and ${E_{ - y}}$  are the amplitudes of the corresponding eigenmodes and ${k_{x,y}} = \omega /c\sin {\theta _{x,y}}$, where ${\theta _{x,y}}$ is the emission angle along the respective axes.
+${E_x}$ , ${E_{ - x}}$,  ${E_y}$, and ${E_{ - y}}$  are the amplitudes of the corresponding eigenmodes, and ${k_{x,y}} = \omega /c\sin {\theta _{x,y}}$, where ${\theta _{x,y}}$ is the angle of emission along the respective axes.
 
 The amplitudes  ${E_x}$ , ${E_{ - x}}$,  ${E_y}$, and ${E_{ - y}}$ are found from
 \begin{equation}
@@ -500,10 +501,10 @@ where
 \end{array}
 \end{equation}
 %\end{strip}
-Here, ${\omega _0} = Gc/{n_{eff}}$ ($c$ is the speed of light), $\gamma $  and $\kappa$  are the back-scattering amplitude at angle $180^{\circ }$ and the right-angle scattering at $\pm 90^{\circ }$, respectively; ${c_1} = {\omega _0}/{n_{eff}}$, ${c_2} = {\omega _0}/\left( {2n_{eff}^2} \right)$, and ${n_{eff}}$  is an effective refractive index~\cite{ExterOptExp,TennerJOpt}.
+Here, ${\omega _0} = Gc/{n_\text{eff}}$ ($c$ is the speed of light), $\gamma $  and $\kappa$  are the back-scattering amplitude at angle $180^{\circ }$ and the right-angle scattering at $\pm 90^{\circ }$, respectively; ${c_1} = {\omega _0}/{n_\text{eff}}$, ${c_2} = {\omega _0}/\left( {2n_\text{eff}^2} \right)$, and ${n_\text{eff}}$  is an effective refractive index~\cite{ExterOptExp,TennerJOpt}.
 The eigenvectors of $\hat H$  estimate the amplitudes ${E_x}$ , ${E_{ - x}}$,  ${E_y}$, and ${E_{ - y}}$.
-The values of $\gamma $, $\kappa$, $c_1$, $c_2$ and $n_{eff}$ are taken from~\cite{TennerJOpt}.
-Using them, we obtain the dispersion curves for the 2D distributed-feedback laser, see Figure 2 in the manuscript.
+The values of $\gamma $, $\kappa$, $c_1$, $c_2$ and $n_\text{eff}$ are taken from~\cite{TennerJOpt}.
+Using them, we obtain the dispersion curves for the 2D DFB laser, see \textbf{Figure 2}.
 
 At $\theta _x = \theta _y = 0$ the eigenvectors of $\hat W$ are \text{(1,1,1,1)}, \text{(1,1,-1,-1)}, \text{(0,0,1,-1)} and \text{(1,-1,0,0)}. 
 These eigenvectors correspond to the following electric field distributions:
