@@ -4,30 +4,23 @@
 
 ----------------------------------------------------------------------
 
-*This paper theoretically studied the ultrafast response time of a plasmonic distributed feedback laser in the large-signal modulation regime. The authors demonstrated the dependence of response limit with*
-*pump spot size using both numerical and analytical approaches. The identification on different ultrafast stages and insights on pump-tunable lasing dynamics could facilitate the applications of plasmon lasers in optoelectronic devices.*
+*This paper theoretically studied the ultrafast response time of a plasmonic distributed feedback laser in the large-signal modulation regime. The authors demonstrated the dependence of response limit with pump spot size using both numerical and analytical approaches. The identification on different ultrafast stages and insights on pump-tunable lasing dynamics could facilitate the applications of plasmon lasers in optoelectronic devices.*
 
 **Review**
 
-*However, the manuscript focused on plasmonic nanohole arrays with a specific parameter design (100-nm hole, 470-nm spacing and 100-nm film thickness). Are the conclusions on the critical pump spot size and*
-*ultrafast response limit (1 ps) general enough to plasmon nanohole array lasers in different design parameters (film thickness, hole size, spacing)?*
+*However, the manuscript focused on plasmonic nanohole arrays with a specific parameter design (100-nm hole, 470-nm spacing and 100-nm film thickness). Are the conclusions on the critical pump spot size and ultrafast response limit (1 ps) general enough to plasmon nanohole array lasers in different design parameters (film thickness, hole size, spacing)? Also, plasmon lasers based on nanohole arrays and nanoparticle arrays show different lasing mechanisms from surface plasmon polariton and surface lattice resonances, respectively. It is not a fair comparison between the calculated response time of plasmon nanohole arrays and experimental results of nanoparticle arrays to verify the accuracy of theoretical modeling (final paragraph, the introduction section).*
 
 **Response**
 
-**1.** The time response of the plasmonic laser is determined by the Purcell factor and the EM field relaxation rate in plasmonic structure. These characteristics depend on film thickness, hole size, spacing. For
-this reason, the values of the critical pump spot size and ultrafast response limit are different for divergent realizations of plasmon nanohole array lasers.
+Note that the pump spot effectively excites the EM field inside the pumped area which forms an effective laser mode. The existence of the *critical* size of the pump beam corresponds to the size of the effective mode. Qualitatively, the size of the effective mode is equal to the characteristic propagation length of the EM field along the plasmonic structure, which is$\sim v_{\text{group}}/ \gamma_a$. When the size of the pump beam is greater than the size of the effective laser mode, the response time almost does not depend on the size of the pump beam. When the size of the pump beam becomes smaller than the size of the effective laser mode, the response time increases with the decrease of the pump beam size.
 
-However, our analytical model shows that the existence of the critical pump spot size is related to finite size of an effective laser mode. When the size of pump beam is greater than the size of the effective
-laser mode the response time almost does not depend on the size of pump beam. When the size of the pump beam becomes smaller than the size of the effective laser mode, the response time increases with the decrease of the pump beam size. For this reason, the critical pump spot size takes place in different realizations of the plasmonic distributed-feedback lasers.
+The effective laser mode is formed by the Bloch modes of a periodic plasmonic structure which determine a characteristic group velocity and a dissipation constant. Of course, modes in different types of structure have different group velocities and relaxation constants. Nevertheless, from the qualitative arguments presented above, there is always the *critical* size of the pump beam, for which the response time is minimal.
 
-**Review**
+However, the specific value of the time response strongly depends on the type of the plasmonic structure. Indeed, the response time depends on the Rabi constant of interaction. In turn, the Rabi constant is determined by the volume of the plasmonic mode which is different for surface plasmon-polariton and surface lattice resonances. In our numerical simulations, we consider plasmon lasers based on nanohole arrays, though in the work [[Daskalakis, Konstantinos S., et al. *Nano letters* 18.4 (2018): 2658-2665.](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.8b00531)] the experiment has been conducted for plasmon lasers based on nanoparticle arrays in the different geometry. In this regard, we agree with the referee that the comparison of the response times obtained in the experiment and in our simulations is not a fair verification of the accuracy of our theoretical modeling. 
 
-*Also, plasmon lasers based on nanohole arrays and nanoparticle arrays show different lasing mechanisms from surface plasmon polariton and surface lattice resonances, respectively. It is not a fair comparison*
-*between the calculated response time of plasmon nanohole arrays and experimental results of nanoparticle arrays to verify the accuracy of theoretical modeling (final paragraph, the introduction section).*
+In the revised version of the manuscript, we reformulate the last paragraph in the <u>Introduction</u> section by excluding this direct comparison between our theory and the experiment. In <u>Conclusion</u>, we add the qualitative arguments that the *critical* size of the pump beam is a common feature for plasmonic DFB lasers.
 
-**Response**
 
-**2.** It is true that in our numerical simulations we consider plasmon lasers based on nanohole arrays, though in the work [Torma] the experiment has been conducted for plasmon lasers based on nanoparticle arrays in the different geometry. In this regard, the conformity of the response times obtained in the experiment and in our simulations is not a fair verification of the accuracy of our theoretical modeling. We agree with the referee in this point and have reformulated the last paragraph in the Introduction section by excluding this direct comparison.
 
 **Review**
 
@@ -35,25 +28,32 @@ laser mode the response time almost does not depend on the size of pump beam. Wh
 
 **Response**
 
-**3.** In our modeling we take into account a large amount of atoms, which have different coordinates $\textbf{r}_m$. The coupling constant between $j$th mode of the plasmonic structure and $m$th atom depends on atom's coordinates as
+In our modeling, we take into account a large number of atoms, which have different coordinates $\textbf{r}_m​$. The coupling constant between $j​$th mode of the plasmonic structure and $m​$th atom depends on atom's coordinates as
 $$
-\Omega_{jm} = \Omega_0 e^{i \textbf{k}_j \textbf{r}_m}
+\Omega _{jm} =  - {{\bf{d}}_m} \cdot {{\bf{E}}_j}({{\bf{r}}_m})/ \hbar
 \tag{1}
 $$
 
+where the electric field is taken at the position of the $m$th atom. The Rabi constants enter as coefficients in the Eqs. (1) – (3).
 
-The size of the pump beam and the power density of pumping are incorporated in the model as the initial conditions for population inversions of atoms. The initial value of the population inversion for the atoms located inside the pumping spot is $D_0$. Other atoms have initial population inversions equal to $-1$, i.e. they are in the ground state. The value of $D_0$ is obtained from the pumping power density as
+The pulse pump of the active medium enters as an initial condition for the atomic population inversion. The initial value of the population inversion for the atoms whose coordinates lie inside the area of the pumping spot is $D_0$. Initial population inversions of other atoms equal to $-1$, i.e. they are in the ground state. The *size* of the pump beam enters as an area, inside which atoms are excited. 
+
+Pump power density (excitation fluence) enters through the value of $D_0​$. The connection between them has the form 
 $$
-\frac{D_0 + 1}{2} = \frac{P_0 \Delta t}{n_c S l \hbar \omega}
+\frac{D_0 + 1}{2} = \eta \frac{P_0 \Delta t}{n_c S l \hbar \omega}
 \tag{2}
 $$
 Here $P_0$ is power of the laser pulse pump; $\Delta t$ is duration of the pump pulse; $n_c$ is the concentration of atoms of the active medium; $S$ is the area of the pump beam; $l$ is the width of the active medium layer; $\hbar \omega$ is the transition frequency of the atom; and $(D_0 + 1)/2$ is the population of the excited state arising due to the pump pulse. 
 
-Thus, we assume that the entire pulse energy comes to the excitation of atoms of the active medium. In real experiment, there are additional channels of energy losses, which lead to the decrease of the population inversion of the excited state. These losses can be taken into account as an addition factor in (2). For the simplicity, we do not consider the additional losses and use the estimation (2).
+Thus, we assume that the entire pulse energy comes to the excitation of atoms of the active medium. In real experiment, there are additional circumstances as a result of which a part of the energy from pulse pumping does not come into the active medium. These circumstances are taken into account as an additional coefficient $\eta <1$ in a right-hand side of (2). 
 
-In our simulations the power of the pump pulse is $P_0 \approx $. This value is typical for experiments carried out in with the same plasmonic structure in the same geometry, see [van exter, Beijnum].
+In our simulations **the power of the pump pulse** is $P_0 \approx ​$. This value is typical for experiments carried out with the same plasmonic structure in the same geometry, see [[F. Beijnum, P. Veldhoven, E. Geluk, M. Dood, G. Hooft, and M. van Exter, *Phys. Rev. Lett.* 110, 206802 (2013).](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.110.206802)].
 
-Note that the dependence of the response time on the pump beam size is observable in a wide range of $D_0$ values, and a fine tune of the pumping parameters is not necessary to observe the predicted dependency.
+Note that the dependence of the response time on the pump beam size is observable in a wide range of $D_0$ values, and a fine tune of the pumping power is not necessary to observe the predicted dependency.
+
+In the revised manuscript, we add explanations on how experimental conditions, such as pump size and pump power density  are incorporated in the modeling.
+
+
 
 **Review**
 
@@ -61,23 +61,27 @@ Note that the dependence of the response time on the pump beam size is observabl
 
 **Response**
 
-**4.** We take into account diffractive coupling between nanoholes in laser equations. For this purpose, firstly, we find the EM field distribution of the Bloch modes of the plasmonic structure within the coupled-mode theory. Using this framework we allow for the scattering of the surface plasmon-polariton waves with different Bloch wavenumbers on the nanoholes. We use the scattering rates found in Ref. \[V. T. Tenner, A. N. van Delft, M. J. A. de Dood, and M. P. van Exter, *Journal of Optics* 16, 114019 (2014)\] for the plasmonic laser based on Au film perforated by the nanohole arrays. The coupled-mode theory with such scattering rates demonstrates a good agreement with the experimental measurement of the band-structure of the plasmonic nanohole arrays laser \[V. T. Tenner, A. N. van Delft, M. J. A. de Dood, and M. P. van Exter, Journal of Optics 16, 114019 (2014)\].
+Diffractive coupling between nanoholes is taken into account in laser equations (1) – (3).
 
-Secondly, we use the obtained EM field distributions to calculate the Rabi constants between the Bloch modes and atoms of the active medium. The eigenfrequencies and the relaxation rates of the Bloch modes enter in the laser equations (1)-(3).
+First, we have found the EM field distribution of the Bloch modes of the plasmonic structure within the coupled-mode theory. Note that the first order of the coupled-mode theory describes the hybridization of initially non-interacting SPP modes through scattering on the holes, i.e. takes into account diffractive coupling **[]**. Scattering rates have been taken from Ref. [[V. T. Tenner, A. N. van Delft, M. J. A. de Dood, and M. P. van Exter, *Journal of Optics* 16, 114019 (2014)](https://iopscience.iop.org/article/10.1088/2040-8978/16/11/114019/meta)] for the plasmonic laser based on Au film perforated by the nanoholes array. The coupled-mode theory with such scattering rates demonstrates good agreement with the experimental measurement of the band-structure of the plasmonic nanohole arrays laser [[V. T. Tenner, A. N. van Delft, M. J. A. de Dood, and M. P. van Exter, *Journal of Optics* 16, 114019 (2014)](https://iopscience.iop.org/article/10.1088/2040-8978/16/11/114019/meta)]. 
 
-Thus, the parameters and dispersive dependences of the Bloch modes of the plasmonic structure taken into account in the laser equations via the Rabi constants, the eiegnfrequencies, and the relaxation rates.
+Second, we use the obtained EM field distributions to calculate the Rabi constants between the Bloch modes and atoms of the active medium. These Rabi constants, the eigenfrequencies and the relaxation rates of the Bloch modes enter the laser equations (1) – (3). The Eqs. (1) – (3) determine the amplitude of each Bloch mode. The amplitudes depend on the interaction between the Bloch mode and active atoms, and, as a consequence, on the pump beam size. The field of the collective mode is formed by the large number of Bloch modes of a periodic plasmonic structure. As a result, the volume of the collective mode changes with a change in the pump beam size. The Purcell factor and the rates of the spontaneous and stimulated emissions also change. The strongest change occurs when the diameter of the pump beam is less than the critical value, at which the strongest dependence of the response time on the diameter appears.
 
-We added the description of the band-structure of the plasmonic nanoholes array laser in the Section 2 of main part of the manuscript and **<u>Appendixes A and B.</u>**
+Note that in our modeling the diameter of the pump beam is always much larger than the period of the nanohole array. For this reason, we do not take into account effects on the boundary of the pump beam.
 
-A change in the pump beam size results in a change in the volume of the collective mode. As a result, the Purcell factor and the rates of the spontaneous and stimulated emissions also change. The strongest change occurs when the diameter of the pump beam is less than the critical value, at which the strongest dependence of the response time on the diameter appears.
+In the revised manuscript, we add the description of the band-structure of the plasmonic nanoholes array laser in the <u>Section 2</u> of the main part of the manuscript and the <u>Appendix</u>.
 
-Note that in our modeling the diameter of the pump beam is always much larger than the period of the nanohole array. For this reason, we do not take into account the inhomogeneous pumping within the cell of plasmonic structure.
+
 
 **Review**
 
 *Also, how is the Rabi constant in the modeling related to the Purcell factor of a specific plasmon cavity? More justifications are needed.*
 
-**5.** We added the derivation of the Rabi constant through the parameters of the plasmonic structure and the active medium in the revised version of the manuscript , see Section 2 in main part of the text and the Appendix A.
+**Response**
+
+We added the derivation of the Rabi constant through the parameters of the plasmonic structure and the active medium in the revised version of the manuscript , see <u>Section 2</u> in main part of the text and the <u>Appendix</u>.
+
+
 
 **Review**
 
@@ -87,35 +91,28 @@ Note that in our modeling the diameter of the pump beam is always much larger th
 
 **Response**
 
-In our simulations we take into account several hundred of the Bloch modes of the plasmonic structure which form together the EM field distribution in the active medium. However, our simulations show that the resulting the EM field distribution slightly changes in the first and second stage of the output pulse evolution. In other words, there is a dynamical equilibrium between relaxation and propagation of the EM field on the one hand and the stimulated amplification of the EM field in the active medium on the other hand. We use the fact of the constancy of the EM field distribution to construct the single-mode model. We consider that there is a single collective mode, the EM field distribution of which coincides with the EM field distribution found in the numerical simulations of the multimode problem. This assumption allows to derive the single-mode laser equations. The results obtained in the framework of the single-mode model are in good agreement with the results of the multimode model, see Figs. 2(a), 4 and Fig. 5a.
+In our simulations we take into account $\sim 500$ Bloch modes of the plasmonic structure which form together the EM field distribution in the active medium. However, our simulations show that the *resulting* EM field distribution slightly changes in the first and second stage of the output pulse evolution. In other words, there is a dynamical equilibrium between relaxation and propagation of the EM field outside the pump beam on the one hand, and the stimulated amplification of the EM field in the active medium on the other hand. We use the fact of the constancy of the EM field distribution to construct the single-mode model. We consider that there is a single collective mode, the EM field distribution of which coincides with the EM field distribution found in the numerical simulations of the multimode problem. This assumption allows to derive the single-mode laser equations. The results obtained in the framework of the single-mode model are in good agreement with the results of the multimode model, see Figs. 2(a), 4 and Fig. 5a.
 
-The change of the EM field distribution from Fig 3d to 3f is associated with a stronger decrease of the population inversion in the third stage of the response. This leads to a violation of  the dynamical equilibrium between relaxation, propagation of the EM field and the stimulated amplification of the EM field in the system. As a result, the EM field distribution begins to change, and the intensity of the EM field begins to decrease.
+The change of the EM field distribution from Fig. 3d to 3f is associated with a stronger decrease of the population inversion in the third stage of the response. This leads to a violation of  the dynamical equilibrium between relaxation, propagation of the EM field and the stimulated amplification of the EM field in the system. As a result, the EM field distribution begins to change, and the intensity of the EM field begins to decrease.
 
 We added the appropriate explanations in the revised version of the manuscript.
+
+
 
 **2.** *Regarding the figures, the order of Figure 5b and 5a can be switched since 5b appeared earlier in the main text. In Figure 5b, what are the units of t_delay? Figure 3 needs additional labeling such as scale bar and timing point of chosen snapshots, and the authors can add more explanations in the figure caption such as the meaning of dashed circles.*
 
 **Response**
 
-We have made the required changes. We changed the order of Figs. 5a and 5b. We indicated the units for $t_\text{delay}$ in Fig. 5b. We added scale bar to the Figure 3; we indicated in the figure caption the time
-moments corresponding to the intensity field distribution in Figures 3. We described the meaning of dashed circles in the Figure 3.
+We have made the required changes. We changed the order of Figs. 5a and 5b. We indicated the units for $t_\text{delay}$ in Fig. 5b. We added a scale bar to the Fig. 3; we indicated in the figure caption the time
+moments corresponding to the intensity field distributions in Figs. 3. We described the meaning of dashed circles in the Fig. 3.
 
-We also changed the caption to Figure 3.
 
-In the previous version:
-
-"Field distribution of the collective mode when ..."
-
-In a new version:
-
-"Distribution of the EM field intensity on the surface of plasmonic DFB
-laser when ..."
 
 **3.** *The authors point out the similarity of Eq. (15) to the time dependence of a superradiant burst, and how that system resembles the current problem and approach (page 6). The parallelism between these two systems is interesting; however, these few sentences seem out of place relative to the major discussion on ultrafast stages of the laser response. We suggest this information be moved to the introduction or conclusion section, and presented as either as potential motivation or future prospect of study.*
 
 **Response**
 
-We placed all mentions to the superradiance problem to the Conclusion section of the manuscript and noted the potential interest in studying the similarity of the observed phenomenon and superradiance.
+We placed all mentions to the superradiance problem to the <u>Conclusion</u> section of the manuscript and noted the potential interest in studying the similarity of the observed phenomenon and superradiance.
 
 
 
@@ -131,11 +128,11 @@ We placed all mentions to the superradiance problem to the Conclusion section of
 
 **Review**
 
-*My main criticism of the paper concerns the statement that the calculations reveal an "optimal" beam size, yielding the shortest response time. From Fig.2(b) one sees that the shortest response time corresponds to a very flat minimum in the red curve. I doubt the robustness of this minimum as the system's parameters, or the level of approximation of the theory, are changed. I strongly suggest that the Authors rephrase the text, claiming that d\~15um corresponds to the minimum size to achieve a short response time, and not the optimal size.*
+*My main criticism of the paper concerns the statement that the calculations reveal an "optimal" beam size, yielding the shortest response time. From Fig.2(b) one sees that the shortest response time corresponds to a very flat minimum in the red curve. I doubt the robustness of this minimum as the system's parameters, or the level of approximation of the theory, are changed. I strongly suggest that the Authors rephrase the text, claiming that $d \sim 15 \mu\text{m}​$ corresponds to the minimum size to achieve a short response time, and not the optimal size.*
 
 **Response**
 
-**1.** We rephrase the text claiming that $d \sim 15 \mu \text{m}​$ corresponds to the minimum size to achieve the shortest response time, rather than the optimal size.
+We agree with the referee that the minimum is flat and some unaccounted effects, such as non-ideal plasmonic structure, inhomogeneous distribution of the active medium, etc., may change the value of the size beam for which the response time is minimal. We rephrase the text claiming that $d \sim 15 \mu \text{m}​$ corresponds to the minimum size to achieve the short response time for considered structure, rather than the optimal size.
 
 **Review**
 
@@ -143,4 +140,4 @@ We placed all mentions to the superradiance problem to the Conclusion section of
 
 **Response**
 
-**2.** We have indicated the parameters of the plasmonic DFB laser in the main part of the manuscript. We have added a description of the mode structure of the plasmonic laser and a method for calculating the values of the constants (Rabi constant, the relaxation rates, etc.) from the laser equations (1)--(3).
+**2.** We have indicated the parameters of the plasmonic DFB laser in the main part of the manuscript. We have added a description of the mode structure of the plasmonic laser and a method for calculating the values of the constants (Rabi constant, the relaxation rates, etc.) from the laser equations (1) – (3). We also add <u>Appendix</u> in the revised manuscript.
