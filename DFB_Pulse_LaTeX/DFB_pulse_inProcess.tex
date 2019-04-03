@@ -148,7 +148,7 @@ Optimization of the size of the pump beam allows an increase in the modulation s
 A conventional plasmonic DFB laser consists of a periodic plasmonic structure, e.g., a metallic film perforated by an array of holes \cite{BeijnumPRL,DorofeenkoOptExp,MengLPR,nefedkin2018acsphot,TennerJOpt,TennerACSPhot,Zyablovsky2017Optimum,Melentiev2017nanolaser} or two-dimensional arrays of plasmonic nanoparticles \cite{ZhouNatNano,SchokkerPRB,daskalakis2018nanolett,SchokkerACSPhot,YangNatComm,YangACSNano,hakala2017lasing,wang2017band}, and an active medium.
 The eigenmodes of such a system are Bloch modes which are distributed over the whole surface of the laser.
 To overcome losses in the metal, an external pumping (optical or electrical) of the active medium is used.
-In the case of optical pumping, the diameter of the pump beam is usually smaller than the size of the periodic plasmonic structure \cite{TennerACSPhot,ZhouNatNano,daskalakis2018nanolett}, see Fig.~\ref{fig1}a.
+In the case of optical pumping, the diameter of the pump beam is usually smaller than the size of the periodic plasmonic structure \cite{TennerACSPhot,ZhouNatNano,daskalakis2018nanolett}, see Fig.~\ref{fig1}.
 In such a case, the EM field is excited inside the pumped area and is formed by a large number of Bloch modes \cite{TennerACSPhot,nefedkin2018acsphot}.
 To describe the multimode dynamics of the plasmonic DFB laser we use an approach which has been proposed in Ref. \cite{Zyablovsky2017approach} for considering ultrafast phenomena in dispersive dissipative media.
 This approach is based on the following equations:
@@ -168,16 +168,16 @@ $\Omega _{jm}$ is the Rabi constant of coupling between the $j$th mode and the $
 \begin{equation}\label{eq4SM}
 {\Omega _{jm}} =  - {{\bf{d}}_m} \cdot {{\bf{E}}_j}({{\bf{r}}_m})/ \hbar.
 \end{equation}
-Here ${{\bf{d}}_m}$  is the dipole moment of the $m$th atom at the transition frequency and ${{\bf{E}}_j}({{\bf{r}}_m})$  is the electric field `per one quantum' in the $j$th mode at the position of the $m$th atom. Every atom of the active medium has its coordinates, which determine the Rabi constants of interaction between the atom and the Bloch modes of the plasmonic structure, see Eq.~(\ref{eq4SM}). This allows us to take into account the spatial distribution of the pumping and the population inversion within the active medium. Assuming that the time of the external pump pulse lies in the femtosecond range and is much shorter than all characteristic times of the plasmonic DFB laser, in our model the ultrashort pulse pumping is described as the initial condition, $D_m(0)$ for atoms lying inside the pump beam. The value of $D_m(0)$ is proportional to the pumping energy per unit area. The population inversions of the atoms whose coordinates lie outside the pump beam are $-1$ at the initial time. Note that the square of the Rabi constant is inversely proportional of the Bloch mode volume and is proportional of the Purcell factor of the mode (see Appendix).
+Here ${{\bf{d}}_m}$ is the dipole moment of $m$th atom at the transition frequency and ${{\bf{E}}_j}({{\bf{r}}_m})$  is the electric field `per one quantum' in $j$th mode at the position of $m$th atom. Every atom of the active medium has its coordinates, which determine the Rabi constants of interaction between the atom and the Bloch modes of the plasmonic structure, see Eq.~(\ref{eq4SM}). This allows us to take into account the spatial distribution of the pumping and the population inversion within the active medium. Assuming that the time of the external pump pulse lies in the femtosecond range and is much shorter than all the characteristic times of the plasmonic DFB laser, in our model, the ultrashort pulse pumping is described as the initial condition, $D_m(0)$ for atoms lying inside the pump beam. The value of $D_m(0)$ is proportional to the pumping energy per unit area. The population inversions of the atoms whose coordinates lie outside the pump beam are $-1$ at the initial time. Note that the square of the Rabi constant is inversely proportional of the Bloch mode volume and is proportional of the Purcell factor of the mode (see Appendix).
 
 The Eqs.~(\ref{eq1})--(\ref{eq3}) generalize the rate equations widely used in laser theory \cite{SiegmanLasers}.
-In addition to the dynamics of the photon number in each mode and the population inversion of each atom, they describe energy flows between the active medium and the atoms, and the interference between the EM fields of the different modes, $n_{jk}$ \cite{Zyablovsky2017approach}. 
+In addition to the dynamics of the photon number in each mode and the population inversion of each atom, they describe energy flows between the active medium and the Bloch modes, and the interference between the EM fields of the different modes, $n_{jk}$ \cite{Zyablovsky2017approach}. 
 
-For a quantitative description of the temporal dynamics of a plasmonic DFB laser under pulse pumping, we consider a laser based on an Au film perforated by a periodic array of nanosized holes and coated with the layer of the active medium, see Fig.~\ref{fig1}. We consider that the thickness of the Au film is $100$ $\text{nm}$, the diameter of the holes is $160$ $\text{nm}$, and the distance between holes is $470$ $\text{nm}$. The surface of the entire periodic plasmonic structure is $190 \times 190$ $\mu \text{m}^2$. We consider that the transition frequency of the active medium, $\omega_\sigma$, is close to the frequency of the second Bloch condition in the plasmonic structure, i.e., $k_{pl}(\omega_{\sigma}) \approx G$, where $k_{pl}$ is a wavevector of the mode in the plasmonic structure and $G$ is a reciprocal lattice vector. \cite{TennerJOpt,TennerACSPhot,nefedkin2018acsphot} and the linewidth of the active medium is about 100 nm.
+For a quantitative description of the temporal dynamics of a plasmonic DFB laser under pulse pumping, we consider a laser based on an Au film perforated by a periodic array of nanosized holes and coated with the layer of the active medium, see Fig.~\ref{fig1}. We consider that the thickness of the Au film is $100$ $\text{nm}$, the diameter of the holes is $160$ $\text{nm}$, and the distance between holes is $470$ $\text{nm}$. The surface of the entire periodic plasmonic structure is $190 \times 190$ $\mu \text{m}^2$. We consider that the transition frequency of the active medium, $\omega_{\sigma}$, is close to the frequency of the second Bloch condition in the plasmonic structure, i.e. $k_\text{pl}(\omega_{\sigma}) \approx G$, where $k_\text{pl}$ is a wavevector of the mode in the plasmonic structure and $G$ is a reciprocal lattice vector \cite{TennerJOpt,TennerACSPhot,nefedkin2018acsphot}, and the linewidth of the active medium is about $100 \text{nm}$.
 
 A similar plasmonic DFB laser have been implemented in a number of experiments \cite{BeijnumPRL,TennerJOpt,TennerACSPhot} and its parameters have been well studied \cite{BeijnumPRL,TennerJOpt,TennerACSPhot,nefedkin2018acsphot}.
 
-The EM field distribution of the Bloch modes of the plasmonic structure have been found within the coupled-mode theory \cite{TennerJOpt,TennerACSPhot,nefedkin2018acsphot} (see also Appendix) which describes hybridization of modes of the system without holes through scattering on the holes. Scattering rates for these modes have been taken from \cite{TennerJOpt,TennerACSPhot}. The coupled-mode theory with such scattering rates demonstrates a good agreement with the experimental measurement of the band-structure of the plasmonic nanohole array laser \cite{TennerJOpt,TennerACSPhot}.
+The EM field distribution of the Bloch modes of the plasmonic structure have been found within the coupled-mode theory \cite{TennerJOpt,TennerACSPhot,nefedkin2018acsphot} (see also Appendix), which describes the hybridization of modes of the system without holes through scattering on the holes. Scattering rates for these modes have been taken from \cite{TennerJOpt,TennerACSPhot}. The coupled-mode theory with such scattering rates demonstrates a good agreement with the experimental measurement of the band-structure of the plasmonic nanohole array laser \cite{TennerJOpt,TennerACSPhot}.
 
 In numerical simulations, we take into account $468$ Bloch modes of the plasmonic structure lying on different dispersion curves. The step of quantization of the Bloch wavevectors is determined by the size of the periodic plasmonic structure \cite{nefedkin2018acsphot} and Suppl.Mat. of \cite{nefedkin2018acsphot}.
 
@@ -186,7 +186,7 @@ In Fig.~\ref{fig2}a the dependence of the photon number on time is shown.
 As mentioned in the Introduction, there are three stages of the response of the system.
 In the first stage, the response of the system is determined by the spontaneous emission in the active medium.
 The photon number in the plasmonic DFB laser is small.
-For the system under consideration, the duration of this stage, i.e., the delay time, turns out to be less than a picosecond.
+For the system under consideration, the duration of this stage, i.e. the delay time, turns out to be less than a picosecond.
 In the second stage, the photon number in the plasmonic laser rapidly increases due to stimulated emission in the active medium.
 This growth ceases with the saturation of the population inversion in the active medium.
 In the third stage, the photon number in the system decreases exponentially with time.
@@ -240,21 +240,21 @@ This time is about one picosecond.
 
 The dependence of the total photon number on time is qualitatively the same for different diameters of the pump beam.
 However, the response times manifest a non-monotonic dependence on the size of the pump beam, see Fig.~\ref{fig2}b.
-It can be seen that there is an optimal size of the pump beam at which the response time is a minimum.
-For the considered plasmonic DFB laser the optimal diameter of the pump beam is about 15 $\mu$m.
+It can be seen that there is a critical size of the pump beam at which the response time is a minimum.
+For the considered plasmonic DFB laser, the critical diameter of the pump beam is about 15 $\mu$m.
 As the pump beam diameter decreases, the response time increases rapidly.
 With an increase in the diameter of the pump beam, the response time changes slowly.
 This kind of behavior of the plasmonic DFB laser takes place at different initial values of the population inversion of the active atoms.
-Thus, there is an optimal diameter of the pump beam, $d_{\text{beam}}^*$, at which an ultrafast light modulation in the plasmonic DFB laser is achieved.
+Thus, there is a diameter of the pump beam, $d_{\text{beam}}^*$, at which an ultrafast light modulation in the plasmonic DFB laser is achieved.
 
 \section*{Single-mode approximation}
 
-The existence of an optimal size of the pump beam can be explained with the example of a single-mode model. To justify the single-mode approximation, we calculate the distribution of the electric field intensity over the area of the plasmonic DFB laser at different moments of time, see Fig.~\ref{fig3}.
-Although in our simulations we take into account several hundreds of the Bloch modes of the plasmonic structure, which together form the EM field distribution in the active medium, we can see that the EM field distribution practically does not change in the first and second stages of the system response. In other words, there is a dynamical balance between relaxation processes in the plasmonic structure, the propagation of the EM field outside the pumped area and the stimulated amplification of the EM field inside the pumped area. When the diameter of the pump beam is larger than the critical value, $d_{\text{beam}} > d_{\text{beam}}^*$, the electric field is located inside the pumped region of the active medium, see Figs.~\ref{fig3}(d)--(f).
+The existence of a critical size of the pump beam can be explained with the example of a single-mode model. To justify the single-mode approximation, we calculate the distribution of the electric field intensity over the area of the plasmonic DFB laser at different moments of time, see Fig.~\ref{fig3}.
+Although in our simulations we take into account several hundred of the Bloch modes of the plasmonic structure, which together form the EM field distribution in the active medium, we can see that the EM field distribution practically does not change in the first and second stages of the system response. In other words, there is a dynamical balance between relaxation processes in the plasmonic structure, the propagation of the EM field outside the pumped area and the stimulated amplification of the EM field inside the pumped area. When the diameter of the pump beam is larger than the critical value, $d_{\text{beam}} > d_{\text{beam}}^*$, the electric field is located inside the pumped region of the active medium, see Figs.~\ref{fig3}(d)--(f).
 In the opposite case, when $d_{\text{beam}} < d_{\text{beam}}^*$, the main part of the electric field is outside the pumped area, see Figs.~\ref{fig3}(a)--(c).
 However, in both cases, the spatial distribution of the electric field intensity remains almost unchanged during its temporal evolution. 
 
-We use the fact of the constancy of the EM field distribution to construct a single-mode model. To do this, we assume that there is a single collective mode which EM field distribution coincides with the EM field distribution found in the numerical simulations of the multi-mode problem. Furthermore, we assume that the pumped active medium interacts only with such a single collective mode. Within these approximations, the system dynamics can be approximately described by the following system of equations \cite{SiegmanLasers}:
+We use the fact of the constancy of the EM field distribution to construct a single-mode model. To do this, we assume that there is a single collective mode, the EM field distribution of which coincides with the EM field distribution found in the numerical simulations of the multi-mode problem. Furthermore, we assume that the pumped active medium interacts only with such a single collective mode. Within these approximations, the system dynamics can be approximately described by the following system of equations \cite{SiegmanLasers}:
 \begin{gather} 
 \dot n =  - 2{\gamma _a}n + 2{N_{\text{at}}}{\Omega _R}\varphi \label{ZE1}
 \\
@@ -268,9 +268,9 @@ The typical relaxation rate of the population inversion of the active medium is 
 Thus, the phase relaxation rate is much larger than other relaxation rates, $\gamma_\sigma \gg \gamma_a, \gamma_D$.
 For this reason, one can adiabatically eliminate $\varphi$ from Eqs.~(\ref{ZE1})--(\ref{ZE3}) and obtain the conventional rate equations
 \begin{gather} 
-\dot n =  - {\gamma _a}n + 2{N_{\text{at}}}\Omega _R^2\left( {2nD + D + 1} \right)/{\gamma _\sigma } \label{RE1}
+\dot n =  - 2 {\gamma _a}n + {N_{\text{at}}}\Omega _R^2\left( {2nD + D + 1} \right)/{\gamma _\sigma } \label{RE1}
 \\
-\dot D =  - {\gamma _D}\left( {D + 1} \right) - 4\Omega _R^2\left( {2nD + D + 1} \right)/{\gamma _\sigma } \label{RE2}
+\dot D =  - {\gamma _D}\left( {D + 1} \right) - 2\Omega _R^2\left( {2nD + D + 1} \right)/{\gamma _\sigma } \label{RE2}
 \end{gather}
 As initial condition we take $D(0) = 1$ and $n(0) = 0$, i.e., all atoms are inverted and there are no photons in the mode.
 The temporal dynamics of such a system is well-known \cite{SiegmanLasers}; it is shown in Fig.~\ref{fig4}.
@@ -296,40 +296,40 @@ We observe three stages of the laser response, which are quantitatively similar 
 In the first stage, $D$ is constant and $n$ reaches stationary states at fixed $D$.
 Under this assumption the solution of Eq.~(\ref{RE1}) is
 \begin{equation} 
-n\left( t \right) = \frac{{2{N_{\text{at}}}\Omega _R^2\left( {D + 1} \right)/{\gamma _\sigma }}}{{4{N_{\text{at}}}\Omega _R^2D/{\gamma _\sigma } - {\gamma _a}}}\left( {\exp \left( {4{N_{\text{at}}}\Omega _R^2D/{\gamma _\sigma } - {\gamma _a}} \right)t - 1} \right) = \frac{{\xi \left( {D + 1} \right)}}{{2\left( {\xi-1} \right)}}\left( {\exp \left( {\xi D - 1} \right){\gamma _a}t - 1} \right), \label{ph}
+n\left( t \right) = \frac{{{N_{\text{at}}}\Omega _R^2\left( {D + 1} \right)/{\gamma _\sigma }}}{{2{N_{\text{at}}}\Omega _R^2D/{\gamma _\sigma } - 2 {\gamma _a}}}\left( {\exp \left[ 2\left( {{N_{\text{at}}}\Omega _R^2D/{\gamma _\sigma } - {\gamma _a}} \right)t \right] - 1} \right) = \frac{{\xi \left( {D + 1} \right)}}{{2\left( {\xi-1} \right)}}\left( {\exp \left[\left( {\xi D - 1} \right) 2 {\gamma _a}t \right] - 1} \right), \label{ph}
 \end{equation}
-where $\xi={4{N_{\text{at}}}\Omega _R^2D/{\gamma _\sigma \gamma_a }}$ is the inverse threshold value of the pumping in the CW regime \cite{ScullyQO}.
+where $\xi={{N_{\text{at}}}\Omega _R^2D/{\gamma _\sigma \gamma_a }}$ is the inverse threshold value of the pumping in the continuous-wave (CW) regime \cite{ScullyQO}.
 At the initial moment, $D \simeq 1$ and we have  
 \begin{equation} 
-n\left( t \right) = \frac{\xi }{{\left( {\xi - 1} \right)}}\left( {\exp \left( {\xi  - 1} \right){\gamma _a}t - 1} \right). \label{ph0}
+n\left( t \right) = \frac{\xi }{{\left( {\xi - 1} \right)}}\left( {\exp \left[ \left( {\xi  - 1} \right) 2 {\gamma _a}t \right] - 1} \right). \label{ph0}
 \end{equation}
 Substituting Eq.~(\ref{ph0}) into Eq.~(\ref{RE2}) one obtains
 \begin{equation} 
-\dot D =  - {\gamma _D}\left( {1 + \eta } \right)\left( {D + 1} \right) - {\gamma _D}\frac{{2\xi \eta D}}{{\left( {\xi  - 1} \right)}}\left( {\exp \left( {\xi  - 1} \right){\gamma _a}t - 1} \right), \label{inv0}
+\dot D =  - {\gamma _D}\left( {1 + \eta } \right)\left( {D + 1} \right) - {\gamma _D}\frac{{2\xi \eta D}}{{\left( {\xi  - 1} \right)}}\left( {\exp \left[\left( {\xi  - 1} \right) 2 {\gamma _a}t \right] - 1} \right), \label{inv0}
 \end{equation}
-where we have put $\eta = 4 \Omega_R^2 /\gamma_D \gamma_\sigma$. 
+where we have put $\eta = 2 \Omega_R^2 /\gamma_D \gamma_\sigma$. 
 
 The second stage corresponds to the time when the exponential term in Eq.~(\ref{inv0}) is dominant, and the dynamics is strongly nonlinear.
 This nonlinear term describes the stimulated energy flow from the atoms to the collective mode.
 In this case, from Eq.~(\ref{inv0}) we obtain the equation
 \begin{equation} 
-\dot D =  - {\gamma _D}\frac{{2\xi \eta D}}{{\left( {\xi  - 1} \right)}}{\exp \left( {\xi  - 1} \right){\gamma _a}t} \label{invnl1}
+\dot D =  - {\gamma _D}\frac{{2\xi \eta D}}{{\left( {\xi  - 1} \right)}} \exp \left[\left( {\xi  - 1} \right) 2 {\gamma _a}t \right] \label{invnl1}
 \end{equation}
 which has the solution
 \begin{equation} 
-D\left( t \right) \simeq \exp \left( { - \frac{{2\xi \eta {\gamma _D}}}{{{{\left( {\xi  - 1} \right)}^2}{\gamma _a}}}\exp \left( {\xi  - 1} \right){\gamma _a}t} \right) = \exp \left( { - \frac{{2{\xi ^2}}}{{{N_{\text{at}}}{{\left( {\xi  - 1} \right)}^2}}}\exp \left( {\xi  - 1} \right){\gamma _a}t} \right).
+D(t) \simeq \exp \left(  - \frac{{\xi \eta {\gamma _D}}}{{{\left( {\xi  - 1} \right)}^2}{\gamma _a}}  \exp \left[\left( {\xi  - 1} \right) 2 {\gamma _a}t \right] \right) = \exp \left(  - \frac{{{\xi ^2}}}{{{N_{\text{at}}}{{\left( {\xi  - 1} \right)}^2}}}\exp \left[\left( {\xi  - 1} \right) 2 {\gamma _a}t \right] \right).
 \end{equation}
 The characteristic time for $D$ to change is 
 \begin{equation} 
-{t_{delay}} = \gamma _a^{ - 1}{\left( {\xi  - 1} \right)^{ - 1}}\ln \left( {{N_{\text{at}}}{{\left( {\xi  - 1} \right)}^2}/2{\xi ^2}} \right). \label{tdele}
+{t_{delay}} = (2\gamma _a)^{ - 1}{\left( {\xi  - 1} \right)^{ - 1}}\ln \left( {{N_{\text{at}}}{{\left( {\xi - 1} \right)}^2}/{\xi ^2}} \right). \label{tdele}
 \end{equation}
 At this time, a sharp decrease of $D$ appears, see Fig.~\ref{fig4}b.
-Note that the assumption that the evolution of $D$ is much slower than the evolution of $n$ is valid when $t_{delay} \gg \gamma_a^{-1} \xi^{-1}$, i.e., $\ln \left( {{N_{\text{at}}}{{\left( {\xi  - 1} \right)}^2}/2{\xi ^2}} \right) \gg 1$.
+Note that the assumption that the evolution of $D$ is much slower than the evolution of $n$ is valid when $t_{delay} \gg \gamma_a^{-1} \xi^{-1}$, i.e., $\ln \left( {{N_{\text{at}}}{{\left( {\xi  - 1} \right)}^2}/{\xi ^2}} \right) \gg 1$.
 When $\xi \gg 1$, the assumption is correct if $N_{\text{at}} \gg 1$, which is true for the considered system.
 
 For $\xi \gg 1$, Eq.~(\ref{tdele}) simplifies to  
 \begin{equation} 
-{t_{\text{delay}}} = {\gamma _\sigma }\ln \left( {{N_{\text{at}}}/2} \right)/4{N_{\text{at}}}\Omega _R^2. \label{tdel}
+{t_{\text{delay}}} = {\gamma _\sigma }\ln \left( {{N_{\text{at}}}} \right)/2{N_{\text{at}}}\Omega _R^2. \label{tdel}
 \end{equation}
 
 \begin{figure}[h]
@@ -365,7 +365,7 @@ In this case, $t_{\text{delay}} \sim \ln(d_{\text{beam}}^2)/d_{\text{beam}}^2$.
 This is in agreement with an increase of the delay time  when the pump beam diameter of the plasmonic DFB laser is reduced, see Fig.~\ref{fig2}b.
 Note that the critical value $d_{\text{beam}}^*$ corresponds with the characteristic propagation length of the EM field outside the pumped active medium and may be evaluated as $d_{\text{beam}}^* \sim v_{\text{group}}/\gamma_a$.
 For the parameters of the DFB laser we have $d_{\text{beam}}^* \sim 10 \mu \text{m}$, which is in agreement with the full model, Fig.~\ref{fig2}b.
-Thus, because the delay time grows when $d_{\text{beam}}>d_{\text{beam}}^*$ and grows in the opposite case as well, we come to the conclusion that there is an optimal value, $\sim d_{\text{beam}}^*$, for the diameter of the pump beam for which the response time is a minimum.
+Thus, because the delay time grows when $d_{\text{beam}}>d_{\text{beam}}^*$ and grows in the opposite case as well, we come to the conclusion that there is a critical value, $\sim d_{\text{beam}}^*$, for the diameter of the pump beam for which the response time is a minimum.
 
 \section*{Conclusion}
 
@@ -406,7 +406,7 @@ In a two-dimensional periodic plasmonic structure whose surface is parallel to t
 \end{equation}
 where $A_{0j}$ is a real normalization constant for \textit{j}th mode; ${{\bf{e}}_j}\left( {x,y,z} \right) = {{\bf{e}}_j}\left( {x + {L_x},y + {L_y},z} \right)$  and ${{\bf{h}}_j}\left( {x,y,z} \right) = {{\bf{h}}_j}\left( {x + {L_x},y + {L_y},z} \right)$, where $L_x$ and $L_y$ are periods of the plasmonic structure along $x$-axis and $y$-axis, respectively.
 
-The functions ${{\bf{e}}_j}\left(\textbf{r}\right)$ and ${{\bf{h}}_j}\left(\textbf{r}\right)$ can be find within the couple-mode theory, see \cite{TennerJOpt,TennerACSPhot} and Section 2 in Suppl.Mat of \cite{nefedkin2018acsphot}. In this approach the eigenmodes of the plasmonic structure with holes are expressed as a linear combinations of the eigenmodes of the plasmonic structure without holes \cite{TennerJOpt,TennerACSPhot}. The expansion coefficients are calculated through the scattering matrix which contains the scattering amplitudes at angles $0^{\circ }$, $\pm 90^{\circ }$ and $180^{\circ }$ and effective refractive index of the plasmonic structure \cite{TennerJOpt,TennerACSPhot}.
+The functions ${{\bf{e}}_j}\left(\textbf{r}\right)$ and ${{\bf{h}}_j}\left(\textbf{r}\right)$ can be find within the couple-mode theory, see \cite{TennerJOpt,TennerACSPhot} and Section 2 in Suppl.Mat of \cite{nefedkin2018acsphot}. In this approach, the eigenmodes of the plasmonic structure with holes are expressed as linear combinations of the eigenmodes of the plasmonic structure without holes \cite{TennerJOpt,TennerACSPhot}. The expansion coefficients are calculated through the scattering matrix which contains the scattering amplitudes at angles $0^{\circ }$, $\pm 90^{\circ }$ and $180^{\circ }$ and effective refractive index of the plasmonic structure \cite{TennerJOpt,TennerACSPhot}.
 
 The eigenmodes of the plasmonic structure without holes are TM-modes, similar to surface plasmons at the metal-dielectric interface \cite{TennerJOpt,TennerACSPhot}. 
 These modes have an in-plane component of the magnetic field, $h_{\parallel}$, which is perpendicular to the direction of mode's propagation and both out-of-plane, $e_{\perp}$, and in-plane, $e_{\parallel}$, components of the electric field \cite{TennerJOpt,TennerACSPhot}. 
@@ -414,7 +414,7 @@ The in-plane electric field, $e_{\parallel}$, is in the direction of the mode's 
 The out-of-plane component of the electric field, $e_{\perp}$, is much greater than the in-plane component, $e_{\parallel}$ \cite{TennerJOpt,TennerACSPhot} and so it plays main role at the interaction of the modes with the active medium.
 
 The eigenmodes of the plasmonic structure with the holes we find within the coupled-mode theory with the experimental values of the scattering amplitudes, see~\cite{TennerJOpt,TennerACSPhot} and Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}. The coupled-mode theory with such scattering amplitudes demonstrates a good agreement with the experimental measurement of the band-structure of the plasmonic nanohole arrays laser \cite{TennerJOpt}.
-At close to the transition frequency of the active medium there are four different dispersion curves. The eigenmodes corresponding to different dispersion curves have various radiation losses and EM field distributions inside the unit cell of the plasmonic structure (see \cite{TennerJOpt,TennerACSPhot} and Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}). In particularly, at the edge of the band gap when the Bloch wavevectors, $\left(k_{xj}, k_{yj}\right) = \left(0, 0\right)$  the EM field distributions in the modes from the different dispersion curves are 
+Near the transition frequency of the active medium, there are four different dispersion curves. The eigenmodes corresponding to different dispersion curves have various radiation losses and EM field distributions inside the unit cell of the plasmonic structure (see \cite{TennerJOpt,TennerACSPhot} and Section 2 in Suppl.Mat. of \cite{nefedkin2018acsphot}). In particular, at the edge of the band gap, when the Bloch wavevectors $\left(k_{xj}, k_{yj}\right) = \left(0, 0\right)$, the EM field distributions in the modes from the different dispersion curves are 
 
 \textbf{Table A}
 
@@ -434,7 +434,7 @@ see~\cite{TennerJOpt,TennerACSPhot} and Section 2 in Suppl.Mat. of \cite{nefedki
 
 The far-field radiation from the plasmonic structure arises mainly due to the scattering of $h_{\parallel}$ on the holes~\cite{TennerJOpt}. 
 For this reason, the modes that have a minimum value of $h_{\parallel}$ at the holes have smaller radiation losses than the modes that have a maximum value of $h_{\parallel}$ at the holes.
-Note that in the continuous-wave regime, the lasing takes place at the modes with small radiation losses and a high quality factor lying on the 2nd dispersion curve, \cite{TennerJOpt,nefedkin2018acsphot}.
+Note that in the CW regime, the lasing takes place at the modes with small radiation losses and high quality factors lying on the 2nd dispersion curve, \cite{TennerJOpt,nefedkin2018acsphot}.
 \\
 
 Suppose that the area under investigation contains an integral number $N$ of plasmonic lattice cells.
