@@ -4,13 +4,13 @@
 
 **Response**
 
-We agree with the referee that the finite size of the pump beam can lead to appearing of the edge effects and influence on the mode quality factor. We do not include these effects in our single-mode model. However, our numerical simulations of Eqs. (1)-(3), the full model, demonstrate the same behavior as the single-mode approximation, compare Fig. 2 and Fig. 4. Note that the full model takes into account the effects caused by the finite size of the pump beam, for details see Fig. 8b and 9 in [Nefedkin, Nikita E., et al.  *ACS Photonics* 5.8 (2018): 3031-3039].
+We agree with the referee that the finite size of the pump beam can lead to the appearance of edge effects and influence on the mode quality factor. We do not include these effects in our single-mode model. However, our numerical simulations of Eqs. (1)-(3), the full model, demonstrate the same behavior as the single-mode approximation, compare Fig. 2 and Fig. 4. Note that the full model takes into account the effects caused by the finite size of the pump beam, for details see Fig. 8b and 9 in [Nefedkin, Nikita E., et al.  *ACS Photonics* 5.8 (2018): 3031-3039].
 
-Moreover, the analytical evaluation shows that the delay time of the output pulse does not depend on the quality factor ($\gamma_a^{-1}$), see Eq. (16). This fact justifies the single-mode approximation we considered.
+Moreover, the analytical evaluation shows that the delay time of the output pulse does not depend on the quality factor ($\gamma_a^{-1}$), see Eq. (16). This fact justifies the single-mode approximation, which we considered.
 
-We put this comment in Single Mode Approximation section of the revised version of the manuscript.
+We have placed this comment in the "Single Mode Approximation" section of the revised version of the manuscript.
 
-
+---
 
 *We have other comments below*
 
@@ -25,4 +25,7 @@ rewording the sentences to improve flow.*
 **Response**
 
 We have taken into account all the comments and changed these points.
+
+- In consequense, there is the diameter of the pump beam...
+- In our simulations we take into account several hundred of the Bloch modes of the plasmonic structure, which together form the EM field distribution in the active medium. One can see that this distribution does not change in the first and second stages of the system response.
 
